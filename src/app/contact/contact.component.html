@@ -1,0 +1,55 @@
+
+<div class="jumbotron">
+        <div class="social-menu">
+            <div class="thanksText">
+                <h5>{{TextMessage}}</h5>
+                <h5>{{TextMessage2}}</h5>
+            </div>
+            <ul>
+                <li *ngFor = "let img of links">
+                    <a href={{img.link}} target="_blank" data-toggle="tooltip" data-placement="bottom" matTooltip={{img.tooltip}} matTooltipPosition ='below'>
+                        <i class="fa fa-{{img.name}}"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <div class="feedback">
+        <button class="btn btn-dark btn-md" type="button" data-toggle="modal" data-target="#exampleModal" matTooltip='Thanks for coming forward.' matTooltipPosition='above'>
+            Feedback?
+        </button>
+    </div>
+ 
+    <div class="feedback_form">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form #form="ngForm" (ngSubmit)="f_feedbackText(form)" autocomplete="off">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Appreciate your feedback</h5>
+                    <button id="modalX" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Leave your name here.." name="UserName" #UserName = "ngModel" [(ngModel)]="fservice.formdata.UserName" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Write the feedback here..." name="Feedback" #Feedback = "ngModel" [(ngModel)]="fservice.formdata.Feedback" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Never mind!</button>
+                    </div>
+                    <div class="form-group" >
+                        <button type="submit" [disabled] = "form.invalid" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+                <div *ngIf="texthere" [ngClass]="feedback_class" type="text">{{PostFeedbackMessage}}</div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div> 
+</div>

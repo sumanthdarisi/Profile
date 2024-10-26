@@ -1,0 +1,37 @@
+<div class="body-space">
+    <div class="jumbotron" style="padding:25px; overflow:auto;">
+        <div class="Home-body">
+            <div class=row>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 15rem;" id="Home_card">
+                            <img class="card-img-top" src="../../assets/Home_Profile_Pic.jpg" alt="Display Picture">
+                            <div class="card-body">
+                              <h5 class="card-title" id="Intro_text">Sumanth Darisi...</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i> <span>{{Phone}}</span><br>
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> {{Email}} <br>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> {{Address}}
+                                    </div>                                
+                        </div>
+                        </div>
+                    </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="row" style="padding: 0px 10px 10px 10px;">
+                        <div class="Home_bio">
+                                <p>Hello there,</p>
+                            <p class="panel">
+                                {{Introduction}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 5px;" id="tech_row">
+                        <div class="Home_bio2" id="Technologies" *ngFor="let tech of Technologies">
+                            <div class="tech_name">{{tech.Name}} | {{tech.Years}} Yrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

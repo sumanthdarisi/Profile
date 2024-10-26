@@ -1,0 +1,34 @@
+<div class="body-space"> 
+    <div class="jumbotron">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1" id="col">
+                    <h4>Professional Experience:</h4>
+                    <div class="con">
+                    <ul class="timeline" *ngFor='let proj of WorkExpience'>
+                        <li>
+                            <div class="row">
+                                <div class="col">
+                                    <a target="_blank" href={{proj.WebLink}}>{{proj.Name}}</a>
+                                </div>
+                                <div class="col">
+                                    <p class="float-right">{{proj.StartYear}} - {{proj.EndYear}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="float-left">{{proj.Designation}}</p>
+                                </div>
+                                <div class="col">
+                                    <p class="float-right" style="font-weight: normal;">{{proj.Location}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>{{proj.Description}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    </div>
+</div>

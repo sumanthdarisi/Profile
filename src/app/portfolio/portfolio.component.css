@@ -1,0 +1,40 @@
+.jumbotron{
+    background-color: rgb(52, 73, 94);  
+    height: 550px;
+    overflow: auto;
+    padding-top: 50px;
+}
+
+.text{
+    position: relative;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.card-title{
+    color: chocolate;
+}
+
+.card{
+    padding: 0px;
+    margin: 20px;
+    min-height: 230px;
+    width: auto;
+    max-width: 17rem;
+    min-width: 15rem;
+}
+
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+#card-default{
+    margin: auto;
+    padding-top: 38%;
+    font-size: 18px;
+    text-align: center;
+    color: darkslategrey;
+}

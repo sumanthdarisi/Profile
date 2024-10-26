@@ -1,0 +1,203 @@
+.home-text{
+    text-align: center;
+}
+
+.card{
+    border: 1px solid #ffffff;
+    background-color: rgb(46, 43, 43);
+    color: white;
+    -webkit-box-shadow: 0px 0px 19px 5px rgba(89,89,89,0.28);
+    -moz-box-shadow: 0px 0px 19px 5px rgba(89,89,89,0.28);
+    box-shadow: 0px 0px 19px 5px rgba(89,89,89,0.28);
+}
+
+
+.card-body{
+    padding: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.card img{
+    padding: 5px;
+    border-radius: 3%;
+    height: 320px;
+}
+
+
+#Intro_text{
+    animation: typing 3s steps(15),
+               blinkTextCursor 500ms steps(10) infinite normal;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 14ch;
+    position: relative;
+}
+
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 15ch;
+    }
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255, 255, 255, 0.75);}
+    to{border-right-color: transparent;}
+}
+
+.Home_bio{
+    color:black;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 100%;
+    height: auto;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+    .Home_bio{
+        margin: 0 0 0 130px;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .Home_bio{
+        padding-top: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 991px)
+{
+    .Home_bio{
+        margin: 0 0 0 90px; 
+    }
+}
+
+/*small*/
+@media only screen and (min-width: 50px) and (max-width: 767px)
+{
+    .Home_bio
+    {
+        margin: 20px 0 0 20px; 
+    }
+}
+
+/*Large*/
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    .Home_bio{
+        margin: 0 0 0 35px; 
+    }
+}
+
+@media only screen and (min-width: 50px) and (max-width:1199px)
+{
+    .Home_bio{
+        font-size: 18px;
+    }
+}
+
+
+.Home-body{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+@media only screen and (min-width: 50px) and (max-width:1199px)
+{
+    #Home_card{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.card-text i{
+    margin-top: 7px;
+}
+
+.card-text span{
+    padding-left: 6px;
+}
+
+
+#Technologies{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.Home_bio2 .tech_name{
+    border-radius: 75px;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    padding: 6px;
+    font-size: 15px;
+    margin: 0 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    transition: 0.3s;
+    transform: translate(0px ,0px);
+}
+
+.Home_bio2:hover{
+    transform: rotate(0deg) skew(0deg) translate(0, -3px);
+}
+
+.Home_bio2 .tech_name:hover{
+    background-color: rgb(56, 55, 55);
+    color: white;
+    font-weight: bold;
+}
+
+#tech_row{
+text-align: justify;    
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px)
+{
+    #tech_row{
+        margin: 0 0 0 85px;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    #tech_row{
+        margin: 0 0 0 20px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px)
+{
+    #tech_row{
+        margin-top: 40px;
+    }
+}
+
+
+/*small*/
+@media only screen and (min-width: 50px) and (max-width: 767px)
+{
+    #tech_row
+    {
+        margin: 0px 0px 0px 3px; 
+    }
+}
+

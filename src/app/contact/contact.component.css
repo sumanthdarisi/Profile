@@ -1,0 +1,134 @@
+.jumbotron{
+    background: #e96443;  
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);  
+    background: linear-gradient(to right, #904e95, #e96443); 
+    height: 550px;
+}
+
+.thanksText{
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    text-align: center;
+    padding-top: 5rem;
+    color: white;
+}
+
+
+.social-menu ul {
+    display: inline-flex;   
+    padding: 0px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 100px;
+}
+    .social-menu ul li {
+        list-style: none;
+        margin: 0 20px;
+    }
+
+    @media only screen and (min-width:50px) and (max-width:767px)
+{
+    .social-menu ul li{
+        margin: 0 6px;
+    }
+}
+
+        .social-menu ul li .fa {
+            color: #000000;
+            font-size: 25px;
+            line-height: 50px;
+            transition: .5s;
+        }
+
+            .social-menu ul li .fa:hover {
+                color: #ffffff;
+            }
+
+        .social-menu ul li a {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            transition: 0.7s;
+            transform: rotate(0deg) translate(0,0px);
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        }
+
+            .social-menu ul li a:hover {
+                transform: rotate(720deg) skew(0deg) translate(0, 0px);
+            }
+
+        .social-menu ul li:nth-child(1) a:hover {
+            background-color: #333945;
+            color: white;
+        }
+
+        .social-menu ul li:nth-child(2) a:hover {
+            background-color: #3b5999;
+            color: white;
+        }
+
+        .social-menu ul li:nth-child(3) a:hover {
+            background-color: #e4405f;
+        }
+
+        .social-menu ul li:nth-child(4) a:hover {
+            background-color: #55acee;
+        }
+
+        .social-menu ul li:nth-child(5) a:hover {
+            background-color: #cd201f;
+        }
+
+        .social-menu ul li:nth-child(6) a:hover {
+            background-color: #0077B5;
+        }
+
+
+.feedback{
+    position: relative;
+    transition: 0.2s;
+    top:25%;
+    transform: rotate(0deg) translate(0,0px);
+    width: 0px;
+}
+
+
+.feedback:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.modal-dialog{
+    top:20%;
+    padding:0px;
+    width: auto;
+    max-width: 300px;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-title{
+    font-size: 15px;
+}
+
+.success_text{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color:#218F76;
+}
+
+
+.error_text{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: #BA2F16;
+}

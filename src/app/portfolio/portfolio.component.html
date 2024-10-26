@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <div class="text">
+        <div class="row" style="padding: 0px 22px;">
+            <div class="col-2-lg col-2-md col-2-sm col-1-xs" *ngFor="let link of Projects">
+                <div class="card">
+                    <img class="card-img-top" src={{link.image}} alt="Card image cap" style="width:271px; height: 180px">
+                    <div class="card-body">
+                        <h4 class="card-title">{{link.name}}</h4>
+                        <p class="card-text">{{link.description}}</p>
+                        <a href={{link.weblink}} target="_blank" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" id="card-default">More projects coming soon...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

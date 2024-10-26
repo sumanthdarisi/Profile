@@ -1,0 +1,69 @@
+
+.row .thumbnail img{
+height: 170px;
+width: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+padding: 10px;
+}
+
+img{
+  vertical-align: middle;
+}
+
+.jumbotron{
+  overflow: auto;
+}
+
+
+.jumbotron .row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.jumbotron .row .thumbnail{
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+}
+
+.thumbnail .caption{
+  text-align: center;
+  padding-top: 4px;
+}
+
+.thumbnail .caption h5 ::after{
+content: " ";
+color: black;
+height: 3px;
+width: auto;
+max-width: 100px;
+min-width: 30px;
+position: absolute;
+margin-right: auto;
+margin-left: auto;
+display: block;
+}
+
+
+#left{
+  text-align: right;
+  font-weight: bold;
+}
+#right{
+  text-align: left;
+}
+
+.thumbnail{
+  background-color: gray;
+  margin: 25px 0px;
+}

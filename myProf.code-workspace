@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\TodoJS"
+		},
+		{
+			"path": "..\\AngularForms"
+		},
+		{
+			"path": "..\\AngCharts"
+		},
+		{
+			"path": "..\\NotesApp"
+		},
+		{
+			"path": "..\\EFI"
+		}
+	],
+	"settings": {}
+}
